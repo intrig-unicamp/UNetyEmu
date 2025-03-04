@@ -1,0 +1,168 @@
+{
+    "players": [
+    {
+        "prefabName": "prefabDrone1CameraLidar",
+        "group": "A",
+        "type": "Drone",
+        "playerFeatures": {
+            "unladenWeight": 14,
+            "approxMaxFlightTime": 20,
+            "maxBatteryCapacity": 3000,
+            "batteryVoltage": 11.1,
+            "batteryStartPercentage": 100,
+            "maxAltitude": 80,
+            "maxThrust": 294,
+            "maxSpeedManufacturer": 30,
+            "maximumTiltAngle": 15,
+            "propellerMaxRPM": 7000
+        },
+        "addTargetGameObject": true,
+        "dynamicScripts":[
+            "DroneDynamics"
+        ],
+        "algorithmScripts":[
+            "DronePIDControlled",
+            "DroneRouthPlanning",
+            "DroneCurrentState",
+            "DroneInternalLogistics2"
+        ],
+        "otherInternalScripts":[
+            "Drone1Animation",
+            "DroneJoinedToPackage"
+        ],
+        "lidarFeatures":{
+            "scriptName": "LidarSensor",
+            "lidarRange": 50.0,
+            "numRaysHorizontal": 360,
+            "numRaysVertical": 1,
+            "verticalFOV": 5.0,
+            "pointsPerSecond": 7000
+        },
+        "depthCameraFeatures":{
+            "scriptName": "DepthCamera",
+            "nearClipPlane": 0.3,
+            "farClipPlane": 60,
+            "fieldOfView": 60,
+            "pixelWidth": 256,
+            "pixelHeight": 256
+        },
+        "communicationFeatures":{
+            "scriptName": "DroneSimpleCommunication"
+        }
+    },
+    {
+        "prefabName": "prefabDrone2CameraLidar",
+        "group": "B",
+        "type": "Drone",
+        "playerFeatures": {
+            "unladenWeight": 16,
+            "approxMaxFlightTime": 20,
+            "maxBatteryCapacity": 3000,
+            "batteryVoltage": 11.1,
+            "batteryStartPercentage": 80,
+            "maxAltitude": 90,
+            "maxThrust": 294,
+            "maxSpeedManufacturer": 30,
+            "maximumTiltAngle": 15,
+            "propellerMaxRPM": 7000
+        },
+        "addTargetGameObject": true,
+        "dynamicScripts":[
+            "DroneDynamics"
+        ],
+        "algorithmScripts":[
+            "DronePIDControlled",
+            "DroneRouthPlanning",
+            "DroneCurrentState",
+            "DroneInternalLogistics2"
+        ],
+        "otherInternalScripts":[
+            "Drone2Animation",
+            "DroneJoinedToPackage"
+        ],
+        "lidarFeatures":{
+            "scriptName": "LidarSensor",
+            "lidarRange": 50.0,
+            "numRaysHorizontal": 360,
+            "numRaysVertical": 1,
+            "verticalFOV": 5.0,
+            "pointsPerSecond": 7000
+        },
+        "depthCameraFeatures":{
+            "scriptName": "DepthCamera",
+            "nearClipPlane": 0.3,
+            "farClipPlane": 60,
+            "fieldOfView": 60,
+            "pixelWidth": 256,
+            "pixelHeight": 256
+        },
+        "communicationFeatures":{
+            "scriptName": "DroneSimpleCommunication"
+        }
+    },
+    {
+        "prefabName": "prefabDrone2Camera",
+        "group": "C",
+        "type": "Drone",
+        "playerFeatures": {
+            "unladenWeight": 16,
+            "batteryStartPercentage": 60,
+            "maxThrust": 294,
+            "maxSpeedManufacturer": 30,
+            "maximumTiltAngle": 15,
+            "propellerMaxRPM": 7000
+        },
+        "addTargetGameObject": true,
+        "dynamicScripts":[
+            "DroneDynamics"
+        ],
+        "algorithmScripts":[
+            "DronePIDControlled",
+            "DroneSimpleRoutePlanning"
+        ],
+        "otherInternalScripts":[
+            "Drone1Animation"
+        ],
+        "depthCameraFeatures":{
+            "scriptName": "DepthCamera",
+            "nearClipPlane": 0.3,
+            "farClipPlane": 60,
+            "fieldOfView": 60,
+            "pixelWidth": 256,
+            "pixelHeight": 256
+        }
+    },
+    {
+        "prefabName": "prefabDrone1Lidar",
+        "group": "D",
+        "type": "Drone",
+        "playerFeatures": {
+            "unladenWeight": 14,
+            "batteryStartPercentage": 30,
+            "maxThrust": 294,
+            "maxSpeedManufacturer": 30,
+            "maximumTiltAngle": 15,
+            "propellerMaxRPM": 7000
+        },
+        "addTargetGameObject": true,
+        "dynamicScripts":[
+            "DroneDynamics"
+        ],
+        "algorithmScripts":[
+            "DronePIDControlled",
+            "DroneSimpleRoutePlanningAndObstacleAvoidance"
+        ],
+        "otherInternalScripts":[
+            "Drone1Animation"
+        ],
+        "lidarFeatures":{
+            "scriptName": "LidarSensor",
+            "lidarRange": 50.0,
+            "numRaysHorizontal": 360,
+            "numRaysVertical": 1,
+            "verticalFOV": 5.0,
+            "pointsPerSecond": 7000
+        }
+    }
+    ]
+}
