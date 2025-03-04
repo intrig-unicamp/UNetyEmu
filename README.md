@@ -49,7 +49,5 @@ Before anything, we need to make sure to have a Unity license. Unity has free [s
 
 ## Documentation
 For the full documentation, please access the Wiki in this repository.
----
 
-_This setup allows drones to receive missions, pick up packages, and deliver them while communicating with Mininet-WiFi._
 
