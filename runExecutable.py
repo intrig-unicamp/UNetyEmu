@@ -13,8 +13,8 @@ LINUX_EXECUTABLE = "Linux/LiUSmall.x86_64"
 WINDOWS_EXECUTABLE = "Windows/UNetyEmu.exe"
 
 # URLs of the release builds
-LINUX_DOWNLOAD_URL = "https://github.com/intrig-unicamp/UNetyEmu/releases/download/aamas26_linux/LiUSmall-Linux.tar.gz"
-WINDOWS_DOWNLOAD_URL = "https://github.com/intrig-unicamp/UNetyEmu/releases/download/aamas26_windows/LiUSmall-Windows.zip"
+LINUX_DOWNLOAD_URL = "https://github.com/intrig-unicamp/UNetyEmu/releases/download/aamas26-release/LiUSmall-Linux.tar.gz"
+WINDOWS_DOWNLOAD_URL = "https://github.com/intrig-unicamp/UNetyEmu/releases/download/aamas26-release/LiUSmall-Windows.zip"
 
 # Archive names
 LINUX_ARCHIVE = "LiUSmall-Linux.tar.gz"
